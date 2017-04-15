@@ -1,5 +1,5 @@
 {
-    "name": "jlcd/api-cielo3.0",
+    "name": "jlcd/api-cielo30",
     "description": "Client for Cielo's 3.0 API",
     "type": "library",
     "require": {
