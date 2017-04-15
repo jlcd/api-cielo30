@@ -1,0 +1,28 @@
+{
+    "name": "jlcd/api-cielo3.0",
+    "description": "Client for Cielo's 3.0 API",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.4",
+        "developercielo/api-3.0-php": "^1.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "keywords": [
+        "api",
+        "cielo"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Joao Drummond",
+            "email": "jldrummond@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "jlcd\\Cielo\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
