@@ -2,9 +2,9 @@
 
 ## Instalação
 
-Via composer: `composer require jlcd/api-cielo3.0`
+Via composer: `composer require jlcd/api-cielo30`
 
-Caso esteja utilizando Laravel (5+), sugiro trabalhar com o Provider criado especialmente para esse Client: [jlcd/api-cielo3.0-laravel](https://github.com/jlcd/api-cielo3.0-laravel)
+Caso esteja utilizando Laravel (5+), sugiro trabalhar com o Provider criado especialmente para esse Client: [jlcd/api-cielo30-laravel](https://github.com/jlcd/api-cielo30-laravel)
 
 Versão mínima do PHP: `5.6`
 
@@ -180,4 +180,4 @@ Os valores aceitos para `CieloCreditCard::brand` são como vistos no campo `Cred
 
 ---
 
-Para sugestões ou reportar bugs, utilize [jlcd/api-cielo3.0/issues](https://github.com/jlcd/api-cielo3.0/issues).
+Para sugestões ou reportar bugs, utilize [jlcd/api-cielo30/issues](https://github.com/jlcd/api-cielo30/issues).
