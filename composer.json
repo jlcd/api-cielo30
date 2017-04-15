@@ -4,8 +4,7 @@
     "type": "library",
     "require": {
         "php": ">=5.6.4",
-        "developercielo/api-3.0-php": "^1.0",
-        "guzzlehttp/guzzle": "^6.2"
+        "developercielo/api-3.0-php": "^1.0"
     },
     "keywords": [
         "api",
