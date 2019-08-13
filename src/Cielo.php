@@ -8,6 +8,7 @@ use jlcd\Cielo\Resources\CieloOrder;
 use jlcd\Cielo\Resources\CieloCreditCard;
 use jlcd\Cielo\Responses\ResourceResponse;
 use jlcd\Cielo\Requests\TokenizeCardRequest;
+use jlcd\Cielo\Requests\BinQuery;
 use jlcd\Cielo\Exceptions\ResourceErrorException;
 
 
@@ -152,5 +153,19 @@ class Cielo
         }
 
         return new ResourceResponse($paymentStatus, $paymentMessage, $paymentData);
+    }
+
+    public function binQuery($bin){
+        try{
+            $binResult = (new BinQuery($this->merchant, $this->environment))->execute($bin);
+            $binData = $binResult;
+            $binStatus = 1;
+            $binMessage = 'Operation Successful';
+        } catch (CieloRequestException $e) {
+            $error = $e->getCieloError();
+            throw new ResourceErrorException($error->getMessage(), $error->getCode());            
+        }
+
+        return new ResourceResponse($binStatus, $binMessage, $binData);
     }
 }
